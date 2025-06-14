@@ -1,0 +1,141 @@
+/* Base Styles */
+.ChoiceButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fafafa;
+  min-height: 100vh;
+  padding: 40px 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  flex-direction: row;
+}
+
+.choice_logo img {
+  width: 500px;
+  height: auto;
+  margin-right: 80px;
+}
+
+.choice_form h1 {
+  font-size: 28px;
+  text-align: center;
+  letter-spacing: 5px;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.choice_button {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.choice_button button {
+  background-color: #ccc;
+  color: #000;
+  border: none;
+  padding: 15px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.choice_button button:hover {
+  background-color: #bb9060;
+  color: #fff;
+}
+
+/* Tablet and Small Screens */
+@media (max-width: 1440px) {
+  .ChoiceButton {
+    flex-direction: row;
+  }
+
+  .choice_logo img {
+    width: 400px;
+    margin-right: 60px;
+  }
+}
+
+/* Mobile Devices */
+@media (max-width: 480px) {
+  .ChoiceButton {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+  }
+
+  .choice_logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    margin-top: 20px;
+  }
+
+  .choice_logo img {
+    margin-top: 20px;
+    width: 280px;
+    height: auto;
+    margin: 0;
+  }
+
+  .choice_form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .choice_form .form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+
+  .choice_form h1 {
+    font-size: 33px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .choice_button {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+
+  .choice_button button {
+    width: 90%;
+    font-size: 16px;
+    padding: 14px;
+    border-radius: 8px;
+  }
+}
+
+/* Extra Small Devices */
+@media (max-width: 320px) {
+  .choice_logo img {
+    width: 250px;
+    margin-bottom: 30px;
+  }
+
+  .choice_button {
+    gap: 20px;
+  }
+
+  .choice_button button {
+    font-size: 16px;
+    padding: 12px 24px;
+  }
+}
