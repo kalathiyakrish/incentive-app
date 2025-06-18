@@ -8,15 +8,21 @@ const ForgetPassword = () => {
 
   const [email, setEmail] = useState("");
 
+  const Go = () => {
+    window.location.href = "/passwordshow";
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (email !== emailid) {
-      alert("Incorrect email.");
+    if (email == emailid) {
+      Go();
+    } else {
+      alert("Incorrect Email.");
     }
   };
 
   const Back = () => {
-    window.location.href = "/second";
+    window.location.href = "/home";
   };
 
   return (
