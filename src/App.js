@@ -25,7 +25,7 @@ function App() {
           <Route path="/choice" element={<ChoiceButton />} />
           <Route path="/carat" element={<Carat />} />
           <Route path="/caratdetail" element={<CaratDetail />} />
-  <Route path="/passwordshow" element={<PasswordShow />} />
+          <Route path="/passwordshow" element={<PasswordShow />} />
         </Routes>
       </Router>
     </div>
